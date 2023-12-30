@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: open sans;
+	background: transparent;
+}
+
+:root{
+	--color-bg: #fff;
+	--color-fg: #000;
+}
+
+/* :root{
+	--color-bg: #000;
+	--color-fg: #fff;
+	--color-link: #c10037;
+}
+
+@media (prefers-color-scheme: light){
+	:root{
+		--color-bg: #fff;
+		--color-fg: #000;
+	}
+
+	a{
+		color: var(--color-link);
+	}
+}
+
+@media (prefers-color-scheme: dark){
+	button a{
+		color: var(--color-bg) !important;
+	}
+
+	a{
+		color: var(--color-fg);
+	}
+} */
+
+body{
+	color: var(--color-fg);
+	background-color: var(--color-bg);
+}
+
+@media(min-width: 673px){
+	body{
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+section{
+	width: 90%;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section *{
+	font-size: 1em;
+}
+
+fieldset{
+	width: 90vw;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section  table  table{
+	display: flex;
+	justify-content: space-around;
+}
+
+section  table  table th, section  table  table tr td{
+	border: 1px solid var(--color-fg);
+	padding: 10px;
+	text-align: center;
+}
+
+
+section > div{
+	text-align: center;
+	margin: 10px;
+}
+
+section div h1{
+	font-size: 2.5em;
+	font-family: poppins;
+	letter-spacing: 5px;
+	line-height: 2em;
+}
+
+.title{
+	font-size: 1.3em;
+	border-bottom: 2px solid var(--color-fg);
+	padding: 15px 0 5px 0;
+	font-family: poppins;
+}
+
+section table tr *{
+	line-height: 3em;
+}
+
+footer{
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+
+button{
+	border-radius: 0;
+	margin: 10px;
+	padding: 15px;
+	background: #eee;
+	color: #111;
+	border: 1px solid #000;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+button a{
+	text-decoration: none;
+	color: var(--color-fg);
+}
+
+@media (max-width: 673px){
+	body{
+		width: 100vw;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	body > *{
+		font-size: 0.5em;
+	}
+
+	section table tr *{
+		line-height: 2.5em;
+	}
+
+	button{
+		width: auto;
+		padding: 10px;
+		font-size: 0.5em;
+	}
+
+}
